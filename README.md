@@ -5,5 +5,5 @@ Strumenti per scaricare i dati relativi al corso di Metodi Computazionali per la
   Si può specificare uan cartella di destinazione 
 
   Per informazioni su uso ed opzioni:
-  >python get_data_py --help
+  >python get_data.py --help
   
