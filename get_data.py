@@ -34,6 +34,7 @@ def get_data(args):
         print('  --help: mostra questo help')
         print('  --e03: eserctiazione E03 - Integrazione e Derivazione')
         print('  --e04: eserctiazione E04 - Integrazione  + Minimizzazione')
+        print('  --e06: eserctiazione E06 - Trasformate di Fourier')
 
         return
 
@@ -55,6 +56,25 @@ def get_data(args):
         
         os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
         os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file2))
+            
+        return 
+
+
+    if args[0] == '--e06':
+        
+        remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/trasformate_fourier/SN_m_tot_V2.0.csv'
+        remote_file2 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/trasformate_fourier/data_sample1.csv'
+        remote_file3 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/trasformate_fourier/data_sample2.csv'
+        remote_file4 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/trasformate_fourier/data_sample3.csv'
+        remote_file5 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/trasformate_fourier/copernicus_PG_selected.csv'
+
+        
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file2))
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file3))
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file4))
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file5))
+
             
         return 
 
