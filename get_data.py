@@ -35,6 +35,7 @@ def get_data(args):
         print('  --e03: eserctiazione E03 - Integrazione e Derivazione')
         print('  --e04: eserctiazione E04 - Integrazione  + Minimizzazione')
         print('  --e06: eserctiazione E06 - Trasformate di Fourier')
+        print('  --e08: eserctiazione E08 - Monte Carlo Markov Chain')
 
         return
 
@@ -74,6 +75,15 @@ def get_data(args):
         os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file3))
         os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file4))
         os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file5))
+
+            
+        return 
+
+    if args[0] == '--e08':
+        
+        remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/mcmc/absorption_line.csv'
+        
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
 
             
         return 
