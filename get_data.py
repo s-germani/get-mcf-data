@@ -36,6 +36,7 @@ def get_data(args):
         print('  --e04: eserctiazione E04 - Integrazione  + Minimizzazione')
         print('  --e06: eserctiazione E06 - Trasformate di Fourier')
         print('  --e08: eserctiazione E08 - Monte Carlo Markov Chain')
+        print('  --e09: eserctiazione E09 - Moduli e Classi')
 
         return
 
@@ -79,16 +80,30 @@ def get_data(args):
             
         return 
 
+    
     if args[0] == '--e08':
         
         remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/mcmc/absorption_line.csv'
         
         os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
 
-            
         return 
 
-    
+
+
+    if args[0] == '--e09':
+        
+        remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/classi/hit_times_M0.csv'
+        remote_file2 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/classi/hit_times_M1.csv'
+        remote_file3 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/classi/hit_times_M2.csv'
+        remote_file4 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica/main/dati/classi/hit_times_M3.csv'
+        
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file2))
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file3))
+        os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file4))
+
+        return 
 
 
 
