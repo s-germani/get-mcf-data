@@ -126,6 +126,15 @@ def get_data():
             return 
 
 
+        if args.exn == 7:
+        
+            remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/equazioni_minimizzazione/fit_data.csv'
+        
+            os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
+            
+            return 
+
+
 
 
 
