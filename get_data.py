@@ -8,9 +8,9 @@ def parse_arguments():
 
 
     parser = argparse.ArgumentParser(description='Scarica i dati per le esercitazioni del corso di Metodi Computazionali per la Fisica (UniPG).')
-    parser.add_argument('--year',          action="store",      required=True,  help='Anno di corso (2022,2023)')
-    parser.add_argument('--exn',           action="store",      required=True,  help='Numero Esercitazione')
-    parser.add_argument('--outdir',        action="store",      default='./',   help='Cartella di destinazione')
+    parser.add_argument('--year',          action="store",    type=int,  required=True,  help='Anno di corso (2022,2023)')
+    parser.add_argument('--exn',           action="store",    type=int,  required=True,  help='Numero Esercitazione')
+    parser.add_argument('--outdir',        action="store",               default='./',   help='Cartella di destinazione')
     
     return parser.parse_args()
 
@@ -20,7 +20,8 @@ def get_data():
 
 
     args = parse_arguments()
-    
+
+    print(args)
 
     outdir = args.outdir 
     doMove = False
@@ -28,10 +29,11 @@ def get_data():
         doMove = True
         print(' I file verranno copiati nella cartella', outdir)
 
-    
+
+    print(args)
     ##################################### 2022 #####################################################à
     if args.year == 2022:
-        
+
         if args.exn == 3:
         
             remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/integrazione_derivazione/vel_vs_time.csv'
@@ -98,10 +100,19 @@ def get_data():
 
 
 
-        ##################################### 2023 #####################################################à
-        elif args.year == 2023:
-
+    ##################################### 2023 #####################################################à
+    elif args.year == 2023:
             
+            if args.exn == 3:
+        
+                remote_file1 = 'https://github.com/s-germani/metodi-computazionali-fisica-2023/blob/main/dati/moduli_scientifici/4FGL_J2202.7%2B4216_weekly_9_11_2023.csv'
+                remote_file2 = 'https://github.com/s-germani/metodi-computazionali-fisica-2023/blob/main/dati/moduli_scientifici/4LAC_DR2_sel.csv'
+        
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file2))
+
+                return
+
             if args.exn == 5:
         
                 remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/classi/hit_times_M0.csv'
@@ -123,16 +134,16 @@ def get_data():
                 
                 os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
             
-            return 
-
-
-        if args.exn == 7:
+                return 
         
-            remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/equazioni_minimizzazione/fit_data.csv'
+
+            if args.exn == 7:
         
-            os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
-            
-            return 
+                remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/equazioni_minimizzazione/fit_data.csv'
+                
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
+                
+                return 
 
 
 
