@@ -57,13 +57,13 @@ def get_data():
 
         if args.exn == 6:
         
-            remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/SN_m_tot_V2.0.csv'
-            remote_file2 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample1.csv'
-            remote_file3 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample2.csv'
-            remote_file4 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample3.csv'
-            remote_file5 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/copernicus_PG_selected.csv'
-
+            remote_file1  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/SN_m_tot_V2.0.csv'            
+            remote_file2  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample1.csv'
+            remote_file3  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample2.csv'
+            remote_file4  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample3.csv'
+            remote_file5  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/copernicus_PG_selected.csv'
         
+
             os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
             os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file2))
             os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file3))
@@ -73,6 +73,7 @@ def get_data():
             
             return 
 
+        
     
         if args.exn == 8:
         
@@ -137,17 +138,42 @@ def get_data():
                 return 
         
 
-            if args.exn == 7:
-        
-                remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/equazioni_minimizzazione/fit_data.csv'
-                
+
+            if args.exn == 9:
+
+                remote_file1  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/SN_m_tot_V2.0.csv'
+
+                remote_file2  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample1.csv'
+                remote_file3  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample2.csv'
+                remote_file4  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample3.csv'
+
+                remote_file5  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J0428.6-3756_weekly_9_15_2023_mcf.csv'
+                remote_file6  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J0721.9+7120_weekly_9_15_2023_mcf.csv'
+                remote_file7  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J1256.1-0547_weekly_9_15_2023_mcf.csv'
+                remote_file8  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J2202.7+4216_weekly_9_15_2023_mcf.csv'
+                remote_file9  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J2232.6+1143_weekly_9_15_2023_mcf.csv'
+                remote_file10 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J2253.9+1609_weekly_9_15_2023_mcf.csv'
+
+                remote_file11 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/copernicus_PG_selected.csv'
+
+
                 os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file2))
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file3))
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file4))
+
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file5))
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file6))
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file7))
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file8))
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file9))
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file10))
+
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file11))
+
+
+
                 
-                return 
-
-
-
-
 
 if __name__ == "__main__":
         
