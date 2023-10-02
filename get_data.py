@@ -106,8 +106,8 @@ def get_data():
             
             if args.exn == 3:
         
-                remote_file1 = 'https://github.com/s-germani/metodi-computazionali-fisica-2023/blob/main/dati/moduli_scientifici/4FGL_J2202.7%2B4216_weekly_9_11_2023.csv'
-                remote_file2 = 'https://github.com/s-germani/metodi-computazionali-fisica-2023/blob/main/dati/moduli_scientifici/4LAC_DR2_sel.csv'
+                remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/moduli_scientifici/4FGL_J2202.7%2B4216_weekly_9_11_2023.csv'
+                remote_file2 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/moduli_scientifici/4LAC_DR2_sel.csv'
         
                 os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
                 os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file2))
