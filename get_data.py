@@ -130,9 +130,8 @@ def get_data():
 
 
             if args.exn == 6:
-        
                 remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/integrazione_derivazione/vel_vs_time.csv'
-                remote_file1 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/integrazione_derivazione/oscilloscope.csv'
+                remote_file2 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/integrazione_derivazione/oscilloscope.csv'
                 
                 os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
                 os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file2))
