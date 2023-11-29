@@ -183,8 +183,16 @@ def get_data():
 
 
 
-                
 
+                
+            if args.exn == 11:
+
+                remote_file1  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/accessori/E11/mycamera.c'
+                
+                os.system('wget --directory-prefix {:}  {:}'.format(outdir, remote_file1))
+
+
+                
 if __name__ == "__main__":
         
     get_data()
