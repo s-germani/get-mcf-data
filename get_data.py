@@ -157,12 +157,14 @@ def get_data():
                 remote_file3  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample2.csv'
                 remote_file4  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/data_sample3.csv'
 
-                remote_file5  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J0428.6-3756_weekly_9_15_2023_mcf.csv'
-                remote_file6  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J0721.9+7120_weekly_9_15_2023_mcf.csv'
-                remote_file7  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J1256.1-0547_weekly_9_15_2023_mcf.csv'
-                remote_file8  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J2202.7+4216_weekly_9_15_2023_mcf.csv'
-                remote_file9  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J2232.6+1143_weekly_9_15_2023_mcf.csv'
-                remote_file10 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/4FGL_J2253.9+1609_weekly_9_15_2023_mcf.csv'
+                                 
+                remote_file5  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/trasformate_fourier/4FGL_J0428.6-3756_weekly_9_15_2023_mcf.csv'
+                remote_file6  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/trasformate_fourier/4FGL_J0721.9%2B7120_weekly_9_15_2023_mcf.csv'
+                remote_file7  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/trasformate_fourier/4FGL_J1256.1-0547_weekly_9_15_2023_mcf.csv'
+                remote_file8  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/trasformate_fourier/4FGL_J2202.7%2B4216_weekly_9_15_2023_mcf.csv'
+                remote_file9  = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/trasformate_fourier/4FGL_J2232.6%2B1143_weekly_9_15_2023_mcf.csv'
+                remote_file10 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2023/main/dati/trasformate_fourier/4FGL_J2253.9%2B1609_weekly_9_15_2023_mcf.csv'
+
 
                 remote_file11 = 'https://raw.githubusercontent.com/s-germani/metodi-computazionali-fisica-2022/main/dati/trasformate_fourier/copernicus_PG_selected.csv'
 
